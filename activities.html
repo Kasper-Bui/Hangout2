@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activities</title>
+    <link rel="stylesheet" href="css/activities.css" />
+  </head>
+  <body>
+    <div id="activityquestion"><b>Em muốn làm gì sau đó?</b></div>
+
+    <form id="form" class="container m-4 pl-4" method="GET">
+      <div class="field">
+        <div class="activity-item">
+          <img src="activities/ThuỷCung.webp" alt="aquarium" />
+          <label><input type="checkbox" name="ACTIVITIES" value="Thủy Cung" />Đi thủy cung</label>
+        </div>
+        <div class="activity-item">
+          <img src="activities/Gamecenter.webp" alt="arcade" />
+          <label><input type="checkbox" name="ACTIVITIES" value="Game" />Chơi game</label>
+        </div>
+        <div class="activity-item">
+          <img src="activities/Cinema.jpg" alt="cinema" />
+          <label><input type="checkbox" name="ACTIVITIES" value="Cinema" />Xem phim</label>
+        </div>
+        <div class="activity-item">
+          <img src="activities/Tô tượng.webp" alt="ceramics" />
+          <label><input type="checkbox" name="ACTIVITIES" value="Tô Tượng" />Tô Tượng</label>
+        </div>
+        <div class="activity-item">
+          <img src="activities/Triễn lãm.jpeg" alt="kunsthalle" />
+          <label><input type="checkbox" name="ACTIVITIES" value="Đi Triển Lãm" />Đi triển lãm</label>
+        </div>
+        <div class="activity-item">
+          <img src="activities/Park.jpg" alt="park.jpeg" />
+          <label><input type="checkbox" name="ACTIVITIES" value="Đi Dạo Công Viên" />Đi dạo công viên</label>
+        </div>
+      </div>
+    </form>
+
+    <button id="submit-button" class="button" onclick="sendToGoogleSheet()">Tiếp</button>
+    <div
+    id="message"
+    style="
+    display: none;
+    margin: 20px;
+    font-weight: bold;
+    color: green;
+    padding: 8px;
+    background-color: beige;
+    border-radius: 4px;
+    border-color: aquamarine;
+    position: fixed;
+    bottom: 0;         /* Giữ phần tử ở đáy màn hình */
+    left: 50%;         /* Đưa phần tử đến giữa màn hình */
+    transform: translateX(-50%); /* Dịch chuyển ngược lại 50% chiều rộng để căn giữa */
+    width: auto;       /* Hoặc đặt chiều rộng cụ thể nếu cần */
+    max-width: 80%;    /* Giới hạn chiều rộng để tránh tràn màn hình */
+    text-align: center;
+    "
+    ></div>
+    <div id="status-container" data-status="none"></div>
+    <p id="demo"></p>
+
+   
+    <script src="script/activities.js">  </script>
+    
+  </body>
+</html>

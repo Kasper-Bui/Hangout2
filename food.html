@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Selection</title>
+    <link rel="stylesheet" href="css/food.css" />
+  </head>
+  <body>
+    <div id="foodquestion">
+      <b>Em muốn ăn món gì?</b>
+    </div>
+    
+    <form id="form" class="container m-4 pl-4" method="GET">
+
+    <div class="field">
+      <div class="food-item">
+        <img src="food/Hamburger.jpg" alt="Burgers, fries and fried chicken" />
+        <label
+          ><input
+            type="checkbox"
+            name="FOOD"
+            value="Burgers, fries and fried chicken"
+          />
+          Hamburger và gà rán</label
+        >
+      </div>
+      <div class="food-item">
+        <img src="food/HotDog.jpg" alt="dog" />
+        <label
+          ><input type="checkbox" name="FOOD" value="Hotdog" /> HotDog</label
+        >
+      </div>
+      <div class="food-item">
+        <img src="food/Korean Food.jpg" alt="koreanfood" />
+        <label
+          ><input type="checkbox" name="FOOD" value="Korean food" /> Đồ Hàn quốc</label
+        >
+      </div>
+      <div class="food-item">
+        <img src="food/BBQ.jpg" alt="Đồ nướng" />
+        <label><input type="checkbox" name="FOOD" value="Đồ nướng" /> Thịt Nướng</label>
+      </div>
+      <div class="food-item">
+        <img src="food/Pizza.jpg" alt="Pizza" />
+        <label><input type="checkbox" name="FOOD" value="Pizza" /> Pizza</label>
+      </div>
+
+      <div class="food-item">
+        <img src="food/Hadilao.jpg" alt="Lẩu" />
+        <label><input type="checkbox" name="FOOD" value="Lẩu" /> Lẩu</label>
+      </div>
+      <div class="food-item">
+        <img src="food/Vietnam food.jpg" alt="Việt Nam Food" />
+        <label><input type="checkbox" name="FOOD" value="Việt Nam food" /> Việt Nam Food</label>
+      </div>
+      <div class="food-item">
+        <img src="food/Sushi.jpg" alt="Sushi" />
+        <label><input type="checkbox" name="FOOD" value="Sushi" /> Sushi</label>
+      </div>
+      <div class="food-item">
+        <img src="food/ramen.jpeg" alt="Ramen" />
+        <label><input type="checkbox" name="FOOD" value="Ramen" /> Ramen</label>
+      </div>
+    </div>
+    
+
+
+
+
+    <button id="submit-button" class="button">
+      Tiếp UWU
+    </button>
+  </body>
+
+  <div
+  id="message"
+  style="
+  display: none;
+  margin: 20px;
+  font-weight: bold;
+  color: green;
+  padding: 8px;
+  background-color: beige;
+  border-radius: 4px;
+  border-color: aquamarine;
+  position: fixed;
+  bottom: 0;         /* Giữ phần tử ở đáy màn hình */
+  left: 50%;         /* Đưa phần tử đến giữa màn hình */
+  transform: translateX(-50%); /* Dịch chuyển ngược lại 50% chiều rộng để căn giữa */
+  width: auto;       /* Hoặc đặt chiều rộng cụ thể nếu cần */
+  max-width: 80%;    /* Giới hạn chiều rộng để tránh tràn màn hình */
+  text-align: center;
+  "
+  ></div>
+
+
+
+<div id="status-container" data-status="none" ></div>
+<script src="script/food.js">  </script>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date</title>
+    <link rel="stylesheet" href="css/date.css" />
+  </head>
+  <body>
+    <h1 title="choose a date">Em rảnh vào hôm nào ...</h1>
+    <form id="form" class="container m-4 pl-4" method="GET">
+      <div class="field">   
+        <label class="label">Ngày nào: (chọn 1 ngày nhé)</label>
+        <div class="control">
+          <input
+            class="input"
+            type="date"
+            name="DATE"
+            required
+          />
+         
+          <button id="submit-button" class="button" >
+            Tiếp i UWU
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <div
+    id="message"
+    style="
+    display: none;
+    margin: 20px;
+    font-weight: bold;
+    color: green;
+    padding: 8px;
+    background-color: beige;
+    border-radius: 4px;
+    border-color: aquamarine;
+    position: fixed;
+    bottom: 0;         /* Giữ phần tử ở đáy màn hình */
+    left: 50%;         /* Đưa phần tử đến giữa màn hình */
+    transform: translateX(-50%); /* Dịch chuyển ngược lại 50% chiều rộng để căn giữa */
+    width: auto;       /* Hoặc đặt chiều rộng cụ thể nếu cần */
+    max-width: 80%;    /* Giới hạn chiều rộng để tránh tràn màn hình */
+    text-align: center;
+    "
+    ></div>
+<div id="status-container" data-status="none" ></div>
+<script src="script/date.js">  </script>
+</body>
+</html>
+
+
+

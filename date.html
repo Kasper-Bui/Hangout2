@@ -23,14 +23,26 @@
           
         </div>
       </div>
-         <style>
-        @media (max-width: 600px) {
-            .input {
-                max-width: 100%; /* Chiếm hết chiều rộng trên màn hình nhỏ */
-                font-size: 16px;  /* Điều chỉnh font size nếu cần */
-            }
+ <style>
+    /* Các kiểu chung cho input */
+    .input {
+        font-size: 18px;
+        padding: 10px;
+        width: 100%;
+        max-width: 250px;
+        border-radius: 8px;
+    }
+
+    /* Media query cho màn hình nhỏ (điện thoại) */
+    @media (max-width: 600px) {
+        .input {
+            max-width: 100%; /* Chiếm hết chiều rộng màn hình */
+            font-size: 14px;  /* Giảm kích thước chữ để phù hợp */
+            padding: 8px;     /* Giảm padding để không chiếm quá nhiều không gian */
         }
-    </style>
+    }
+</style>
+
       <div class="control">
         <button id="submit-button" class="button">Tiếp i UWU</button>
       </div>

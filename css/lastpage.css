@@ -4,17 +4,22 @@ body {
   font-family: "Courier";
   background-color: #fff5e4;
   color: #ff9494;
+  
 }
 #thankyou {
-  font-size: 40px;
+  font-size: 32px;
   margin-bottom: 20px;
-  margin-top: -10px;
+  margin-top: 10px;
 }
 .rizz {
-  margin-bottom: -40 px;
-  width: 450px;  /* Điều chỉnh theo ý em */
-  height: 450;  /* Giữ tỷ lệ ảnh */
-    
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  #rizz {
+    max-width: 80%; /* Thu nhỏ hơn chút trên màn hình nhỏ */
+  }
 }
 .button {
   padding:10px 20px;
